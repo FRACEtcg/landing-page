@@ -1,0 +1,82 @@
+:root {
+	--white: #fff;
+	--black: #000;
+	--darker-brown: #8d5524;
+	--dark-brown: #c68642;
+	--mid-brown: #e0ac69;
+	--light: #f1c27d;
+	--lighter: #ffefd9;
+	--hundred: 100%;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	height: var(--hundred);
+	width: var(--hundred);
+}
+header,
+main,
+footer,
+.container {
+	display: flex;
+}
+header {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	background-color: var(--dark-brown);
+	font-size: 2em;
+}
+h1 {
+	line-height: 0.9;
+	box-shadow: 2px 2px 3px 1px var(--black), -3px -3px 3px 1px var(--white),
+		3px 3px 5px 2px var(--white);
+	text-shadow: 4px 4px 4px rgb(62, 62, 62), 2px 2px 2px rgb(31, 31, 31),
+		3px 3px 3px rgb(52, 52, 52), 1px 1px 1px rgb(20, 20, 20);
+	color: var(--lighter);
+}
+h1::first-letter {
+	color: var(--dark-brown);
+	font-size: 1.2em;
+}
+main {
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	background-color: var(--lighter);
+}
+main > .container {
+	background-color: var(--white);
+	min-width: 350px;
+	min-height: 300px;
+	padding: 0.5em;
+	column-gap: 1em;
+	justify-content: center;
+	align-items: center;
+}
+.project {
+	min-width: 100px;
+	min-height: 100px;
+	background-color: var(--lighter);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 0.5%;
+}
